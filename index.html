@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte pour Mikibi - 20 Ans ✨</title>
+    <style>
+        /* === CSS === */
+        
+        body {
+            background: linear-gradient(45deg, #f672b6, #f8e8ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+        }
+        
+        .carte {
+            width: 420px;
+            height: 600px;
+            /* Ajusté pour le scroll */
+            background: rgb(250, 214, 239);
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s;
+        }
+        
+        .carte:hover {
+            transform: rotate(-2deg) scale(1.03);
+        }
+        
+        .couverture {
+            background: linear-gradient(135deg, #dc3aaee4, #da70d6);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            margin: 0;
+            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+            letter-spacing: 1px;
+        }
+        
+        .sous-titre {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.4em;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+        
+        .contenu-scrollable {
+            height: 300px;
+            overflow-y: auto;
+            padding: 0 30px;
+            scrollbar-width: thin;
+            scrollbar-color: #a20679 #f9f0ff;
+        }
+        
+        .contenu-scrollable::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .contenu-scrollable::-webkit-scrollbar-thumb {
+            background: #b8085a;
+            border-radius: 10px;
+        }
+        
+        .contenu-scrollable::-webkit-scrollbar-track {
+            background: #f9f0ff;
+        }
+        
+        .message {
+            line-height: 1.7;
+            color: #333;
+            font-size: 1.05em;
+            padding: 20px 0;
+        }
+        
+        .message strong {
+            color: #a30c64;
+        }
+        
+        .verse {
+            font-style: italic;
+            background: #f9f0ff;
+            padding: 12px;
+            border-left: 3px solid #da70d6;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        
+        .signature {
+            font-weight: 600;
+            text-align: right;
+            margin-top: 25px;
+            color: #9a0c74;
+        }
+        
+        .heart {
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+        
+        .decoration {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 2em;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .confettis {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 10;
+        }
+        
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        
+        @keyframes tomber {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+        
+        .photo-ronde {
+            width: 120px;
+            height: 120px;
+            background: url('IMG-20250423-WA0060.jpg') center/cover;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 4px solid #a30c64;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2));
+        }
+    </style>
+</head>
+
+<body>
+    <!-- === HTML === -->
+    <div class="carte">
+        <div class="couverture" id="couverture">
+            <h1>20 Ans de Grâce</h1>
+            <p class="sous-titre">Miradie K, tu es un feu d'artifice divin 🎆</p>
+            <div class="confettis"></div>
+        </div>
+        <div class="contenu-scrollable">
+            <div class="message">
+                <div class="photo-ronde"></div>
+                <p>Hey ma <strong>sœur de combat</strong>,</p>
+                <p>20 ans, c’est le début des <strong>vraies folies</strong> (en restant sage, hein 😌). Merci d’être cette <strong>roche</strong> qui dégomme les problèmes à coups de vérités même quand ça pique. T’as été ma <strong>BFF perso</strong> depuis
+                    toujours, ma <strong>garde-royale</strong> en humanités, et aujourd’hui, tu es… <strong>la GOAT 🐐</strong>.</p>
+                <p>Tu sais qu’on compte sur toi pour les <strong>discours qui remettent en place</strong>, les <strong>blagues qui tuent</strong>, et surtout pour ton <strong>cœur en or</strong> </p>
+                <p>Tu es un exemple de force, de responsabilité et de foi. Tu prends soin des tiens avec une douceur admirable, et tu avances avec confiance, parce que tu sais en qui tu crois ✨.</p>
+                <p>En ce jour spécial 🎂, je prie que Dieu continue de t’éclairer, de te fortifier et de faire fleurir tout ce que tu touches.</p>
+                <p>Que la paix, la joie, la santé et la réussite t’accompagnent chaque jour 🙌🏽.</p>
+                <p>Tu mérites ce qu’il y a de plus beau. Joyeux anniversaire à une femme exceptionnelle. Je t’aime fort ma sœur ! 💖</p>
+
+
+                <p class="verse">"Car je connais les projets que j’ai formés sur vous, dit l’Éternel, projets de paix et non de malheur, afin de vous donner un avenir et de l’espérance." <br><em>Jérémie 29:11</em></p>
+                <p>Que cette année t’apporte des <strong>victoires</strong> aussi fulgurantes que jamais, des <strong>rires</strong> plus contagieux que thérapeutique, et une <strong>foi</strong> qui déplace les montagnes. Dieu a clairement mis du <strong>Glow Up</strong>                    dans ton ADN ✨.</p>
+
+                <p class="signature">Avec tout mon respect et amour,<br>Shekinah <span class="heart">🩷</span></p>
+            </div>
+        </div>
+        <div class="decoration">🥳🎉🥂🎂</div>
+    </div>
+
+    <!-- === JavaScript === -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const couverture = document.getElementById('couverture');
+            const audio = new Audio('Staan_Louriah_MOKOLO_NA_NGA__feat_Isma_Swagga(256k).mp3'); // Remplace par ton MP3
+
+            couverture.addEventListener('click', () => {
+                audio.play();
+                creerConfettis();
+            });
+
+            function creerConfettis() {
+                const couleurs = ['#ff9a9e', '#fad0c4', '#a1c4fd', '#c2e9fb', '#d4fc79', '#8a2be2'];
+                for (let i = 0; i < 100; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.style.position = 'absolute';
+                    confetti.style.width = '10px';
+                    confetti.style.height = '10px';
+                    confetti.style.backgroundColor = couleurs[Math.floor(Math.random() * couleurs.length)];
+                    confetti.style.borderRadius = '50%';
+                    confetti.style.left = Math.random() * 100 + '%';
+                    confetti.style.top = '-10px';
+                    confetti.style.opacity = '0.8';
+                    confetti.style.animation = `tomber ${Math.random() * 3 + 2}s linear forwards`;
+                    document.querySelector('.confettis').appendChild(confetti);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
